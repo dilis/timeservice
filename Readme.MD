@@ -24,8 +24,8 @@ Response Schema
 Building
 --------
 
-1. Build the JAR:
-   `./mvnw package`  on Linux, or
-    `mvnw.cmd` on Windows
-2. Build the container
-   `docker build -t avaloq docker/Dockerfile .`
+1. Build the JAR:  
+   `./mvnw package`  on Linux, or  
+    `mvnw.cmd` on Windows  
+2. Build the container  
+   `docker build -t avaloq docker/Dockerfile .`  
