@@ -28,4 +28,4 @@ Building
    `./mvnw package`  on Linux, or  
     `mvnw.cmd` on Windows  
 2. Build the container  
-   `docker build -t avaloq docker/Dockerfile .`  
+   `docker build -t avaloq -f docker/Dockerfile .`  
