@@ -9,11 +9,18 @@ public class ServerTime {
   public LocalDate date;
   public LocalTime time;
   public ZoneId timezone;
+  public String iso8601;
 
   public ServerTime() {
+  }
+
+  public static ServerTime now() {
+    ServerTime st = new ServerTime();
     LocalDateTime now = LocalDateTime.now();
-    date = now.toLocalDate();
-    time = now.toLocalTime();
-    timezone = ZoneId.systemDefault();
+    st.date = now.toLocalDate();
+    st.time = now.toLocalTime();
+    st.timezone = ZoneId.systemDefault();
+    st.iso8601 = now.toString();
+    return st;
   }
 }
